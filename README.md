@@ -54,7 +54,7 @@ The Farmazy application includes the following key features:
 - **Tools & Configuration:**
   - npm (Node Package Manager)
   - Git for version control
-  - VS Code (Recommended IDE)
+  - VS Code for writing code
 
 ---
 
