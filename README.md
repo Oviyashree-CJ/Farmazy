@@ -20,18 +20,19 @@ This project is ideal for learning React components, state management, form vali
 The project is organized as follows:
 
 Farmazy/
-├── public
+├── public/
 ├── src/
-| ├── assets/
-| | ├── css/
-| | ├── images/
-│ ├── components/
-│ ├── data/
-│ ├── pages/
-│ |── App.css
-│ ├── App.js
-│ ├── index.js
-└──.... 
+│   ├── assets/
+│   │   ├── css/
+│   │   └── images/
+│   ├── components/
+│   ├── data/
+│   ├── pages/
+│   ├── App.css
+│   ├── App.js
+│   └── index.js
+└── ...
+
 
 ---
 
