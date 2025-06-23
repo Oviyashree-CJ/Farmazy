@@ -1,4 +1,4 @@
-# Farmazy - Grocery Web Application
+# Farmazy - E-commerce Grocery Store
 
 Farmazy is a responsive grocery shopping web application developed using React.js. The platform is designed to offer a smooth online shopping experience for grocery items, with user-friendly authentication, dynamic product listings, and a clean interface.
 
