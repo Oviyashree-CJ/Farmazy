@@ -22,17 +22,16 @@ The project is organized as follows:
 Farmazy/
 ├── public/
 ├── src/
-│   ├── assets/
-│   │   ├── css/
-│   │   └── images/
-│   ├── components/
-│   ├── data/
-│   ├── pages/
-│   ├── App.css
-│   ├── App.js
-│   └── index.js
+│ ├── assets/
+│ │ ├── css/
+│ │ └── images/
+│ ├── components/
+│ ├── data/
+│ ├── pages/
+│ ├── App.css
+│ ├── App.js
+│ └── index.js
 └── ...
-
 
 ---
 
@@ -83,19 +82,19 @@ The Farmazy application includes the following key features:
 ## Authentication Flow (Explained)
 
 1. **Login:**
-- Validates username, email, and password format.
-- If valid, stores user data in local storage or state.
-- Displays user name on the navbar with a dropdown.
+   - Validates username, email, and password format.
+   - If valid, stores user data in local storage or state.
+   - Displays user name on the navbar with a dropdown.
 
 2. **Logout:**
-- On clicking "Logout", a modal appears asking for password.
-- If password is correct, user is logged out and login button reappears.
-- If incorrect, an error is shown.
+   - On clicking "Logout", a modal appears asking for password.
+   - If password is correct, user is logged out and login button reappears.
+   - If incorrect, an error is shown.
 
 3. **Forgot PIN:**
-- Redirects to a reset form.
-- User must enter their username, email, and new password.
-- On validation, credentials are updated.
+   - Redirects to a reset form.
+   - User must enter their username, email, and new password.
+   - On validation, credentials are updated.
 
 ---
 
