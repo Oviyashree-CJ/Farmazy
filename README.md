@@ -8,9 +8,30 @@ This project is ideal for learning React components, state management, form vali
 
 ## Table of Contents
 
+- [Project Structure](#project-structure)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Authentication Flow](#authentication-flow)
+
+---
+
+## Project Structure
+
+The project is organized as follows:
+
+Farmazy/
+├── public
+├── src/
+| ├── assets/
+| | ├── css/
+| | ├── images/
+│ ├── components/
+│ ├── data/
+│ ├── pages/
+│ |── App.css
+│ ├── App.js
+│ ├── index.js
+└──.... 
 
 ---
 
