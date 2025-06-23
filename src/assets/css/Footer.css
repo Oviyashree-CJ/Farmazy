@@ -1,0 +1,66 @@
+/* Ensure the entire page fills the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Root container and App wrapper */
+#root, .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content should grow to fill space */
+.main-content {
+  flex: 1;
+}
+
+.text{
+  color: black;
+}
+
+/* Footer should stay at the bottom */
+.footer {
+  color: black;
+  text-align: center;
+  padding: 25px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Styling links */
+.footer-link {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* -------- Responsive Enhancements -------- */
+@media (max-width: 768px) {
+.footer {
+  padding: 20px 10px;
+}
+
+.footer-link {
+  display: inline-block;
+  margin: 5px;
+  font-size: 15px;
+}
+}
+
+@media (max-width: 480px) {
+.footer-link {
+  display: block;
+  margin: 6px 0;
+  font-size: 14px;
+}
+}

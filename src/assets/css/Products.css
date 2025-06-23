@@ -1,0 +1,22 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.products-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* For smaller screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .products-page {
+    padding: 15px;
+  }
+}
+
+/* For even smaller screens (e.g., very small mobile phones) */
+@media (max-width: 480px) {
+  .products-page {
+    padding: 10px;
+  }
+}

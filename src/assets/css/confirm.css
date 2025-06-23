@@ -1,0 +1,46 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logout-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  flex-wrap: wrap;
+}
+
+.logout-modal-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  animation: slideFade 0.3s ease-out;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Responsive Enhancements ---------- */
+@media (max-width: 480px) {
+  .logout-modal-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+}

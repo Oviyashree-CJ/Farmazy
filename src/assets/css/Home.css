@@ -1,0 +1,84 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-section {
+  background: url('../images/bg1.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 80vh;
+  position: relative;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay for readability */
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: #eee;
+}
+
+.hero-content .btn-success {
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+}
+
+/* -------- Responsive Enhancements -------- */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content .btn-success {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-content .btn-success {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.25rem;
+  }
+}

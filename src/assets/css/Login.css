@@ -1,0 +1,83 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.login-box {
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 150px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.cart-link .badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+  z-index: 1;
+}
+
+/* -------- Responsive Enhancements -------- */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 15px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .form-group {
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .form-group {
+    margin: 6px 0;
+  }
+
+  .cart-link .badge {
+    font-size: 0.7rem;
+    padding: 0.3em 0.5em;
+  }
+}
+

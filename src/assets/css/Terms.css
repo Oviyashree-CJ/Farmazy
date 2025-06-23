@@ -1,0 +1,64 @@
+/* Terms.css */
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3436;
+  border-bottom: 2px solid #00b894;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  background-color: #f8f9fa;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+h5 {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #0984e3;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+a {
+  color: #00b894;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* CTA Button */
+.btn-light-green {
+  background-color: #00b894;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-light-green:hover {
+  background-color: #019875;
+}
+
+/* Responsive spacing */
+@media (max-width: 576px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

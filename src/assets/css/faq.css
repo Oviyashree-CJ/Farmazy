@@ -1,0 +1,63 @@
+/* faq.css */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-light-green {
+  background-color: #d4edda !important;
+}
+
+.navbar .nav-link {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* -------- Responsive Enhancements -------- */
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .accordion-button {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion-button {
+    font-size: 14px;
+  }
+
+  .navbar .nav-link {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.carousel-card {
+  width: 22rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin: 1rem; /* Add spacing between cards */
+}
+
+.carousel-card:hover {
+  transform: scale(1.03);
+}
+
+.carousel-card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+.carousel-card .card-body {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.btn-success {
+  background-color: #8AD236;
+  color: black;
+}
+
+/* ----------- Responsive Styles ----------- */
+
+@media (max-width: 768px) {
+  .carousel-card {
+    width: 90%; /* Adapt to smaller screen width */
+  }
+
+  .carousel-card-wrapper {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-card {
+    width: 100%; /* Full width for very small screens */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 0.6rem; /* Reduce padding on icons */
+  }
+
+  .carousel-card img {
+    height: 160px; /* Adjust image height for mobile */
+  }
+}

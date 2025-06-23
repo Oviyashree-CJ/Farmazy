@@ -1,0 +1,44 @@
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-button {
+    list-style: none;
+    margin-left: 5px;
+    border-radius: 20px;
+    padding: 6px;
+    font-weight: bold;
+  }
+  .nav-icon {
+    width: 22px;
+    height: 20px;
+    margin-right: 3px;
+  }
+  
+  .image-fluid {
+    filter: invert(100%);
+}
+
+  .auth-button:hover {
+    background: #007f5f;
+    transition: 1s;
+    color: white;
+  }
+
+.dropdown-item{
+  border-radius: 0px;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 6px 12px;       /* Reduce padding */
+  font-size: 15px;         /* Smaller text */
+  font-weight: 500;        /* Optional: make it lighter */
+  line-height: 1.2;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
