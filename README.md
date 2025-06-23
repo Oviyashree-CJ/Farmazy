@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Farmazy - Grocery Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Farmazy is a responsive grocery shopping web application developed using React.js. The platform is designed to offer a smooth online shopping experience for grocery items, with user-friendly authentication, dynamic product listings, and a clean interface.
 
-## Available Scripts
+This project is ideal for learning React components, state management, form validations, and frontend interaction patterns commonly used in real-world applications.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Authentication Flow](#authentication-flow)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Farmazy application includes the following key features:
 
-### `npm run build`
+### Product Display
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Product sections categorized by type (e.g., fruits, groceries).
+- Carousel-based navigation between product categories.
+- Each section displays up to four products per row.
+- Items are organized with name, image, and price.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### User Authentication
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Login with username, email, and password validation.
+  - Username accepts full and special characters.
+  - Email is validated with standard format checking.
+  - Password must include at least six characters, with at least one number and one alphabet.
+- After successful login:
+  - The "Login" button changes to display the username.
+  - A dropdown menu appears with a logout option.
+- Logout requires password re-entry for confirmation.
+  - If the password is incorrect, an error message is displayed.
+  - If logout is confirmed, the user is logged out.
+- Includes a "Forgot PIN?" option:
+  - Leads to a password reset form.
+  - Requires username, email, and new password for confirmation.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend:**
+  - React.js
+  - CSS3
+  - Bootstrap (for responsive layout and UI components)
+  - JavaScript (ES6+)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Tools & Configuration:**
+  - npm (Node Package Manager)
+  - Git for version control
+  - VS Code (Recommended IDE)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Authentication Flow (Explained)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Login:**
+- Validates username, email, and password format.
+- If valid, stores user data in local storage or state.
+- Displays user name on the navbar with a dropdown.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Logout:**
+- On clicking "Logout", a modal appears asking for password.
+- If password is correct, user is logged out and login button reappears.
+- If incorrect, an error is shown.
 
-### Code Splitting
+3. **Forgot PIN:**
+- Redirects to a reset form.
+- User must enter their username, email, and new password.
+- On validation, credentials are updated.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+Developed by **Oviyashree C J** with the help of ChatGPT for guidance and code generation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
