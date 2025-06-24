@@ -98,6 +98,6 @@ The Farmazy application includes the following key features:
 
 ---
 
-Developed by **Oviyashree C J** with the help of ChatGPT for guidance and code generation
+Developed by **Oviyashree C J** 
 
 ---
